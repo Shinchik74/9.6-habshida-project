@@ -56,7 +56,7 @@ module.exports = {
       // Подключаем картинки из css
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
-        type: 'asset/resource',
+        type: 'assets/images',
         generator: {
           filename: 'static/[name][ext]'
         }
@@ -84,7 +84,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: './src/img',
+          from: './src/assets/images',
           to: 'img',
         },
       ]

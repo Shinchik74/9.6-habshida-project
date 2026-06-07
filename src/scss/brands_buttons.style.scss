@@ -1,0 +1,114 @@
+// .arrow-right {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border: 2px solid rgba(255, 62, 121, 1);
+//     border-radius: 50%;
+//     color: rgba(255, 62, 121, 1);
+//     width: 40px;
+//     height: 40px;
+//     background: transparent;
+//     font-size: 180%;
+// }
+.brands-buttons {
+    display: flex;
+    width: 240px;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 6px;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin: 0;
+}
+// .arrow-right:hover {
+//     transform: translate(3px);
+//     transition: 0.3s;
+// }
+.lenovo-img {
+    width: 120px;
+    height: 60px;
+}
+
+ .samsung-img {
+    width: 140px;
+    height: 100px; 
+} 
+
+.apple-img {
+    width: 60px;
+    height: 45px;
+}
+
+.view-img {
+    width: 128px;
+    height: 100px;
+}
+
+.hp-img {
+    width: 70px;
+    height: 70px;
+}
+
+.acer-img {
+    width: 110px;
+    height: 60px;
+}
+
+.sony-img {
+    width: 128px;
+    height: 100px;
+}
+.logo-swiper {
+    padding: 0 1rem;
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+}
+.logo-swiper-wrapper {
+    display: flex;
+    flex-direction: row;  
+}
+.logo-swiper-slide {
+width: 240px !important;
+    height: 72px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.logo-swiper-pagination {
+    padding-top: 2rem;
+    height: 1rem;
+}
+.logo-button-show-hide, .logo-button-show-hide2 {
+    display: none;
+    background: none;
+    border: none;
+    align-items: center;
+    gap: 0.3rem;
+   padding-bottom: 1rem;
+}
+@media (min-width:768px) {
+      .logo-swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1vw;
+      padding-left: 0.7rem;
+        
+    }
+    .button2 {
+        grid-row: 3;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .hidden {
+        display: none !important;
+    }
+  .logo-button-show-hide {
+    display: flex;
+  }
+}
