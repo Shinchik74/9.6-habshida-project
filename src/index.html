@@ -9,10 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HABSIDA 9.6</title>
   </head>
-  <body class="body-main .body-active">
+  <body class="body-main">
+    
     <!-- <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
     <h3>Welcome to Webpack 5 starter </h3> -->
-    <Header >
+    <header >
         <nav class="header__navigation" >
             <div class="header__navigation--left-button">
                 <button type="button" class="nav-button header__navigation--left-button---burger">
@@ -46,8 +47,9 @@
             </div>
            
         </nav>
-    </Header> 
-    <aside class="aside-menu-hidden">
+    </header> 
+    
+    <aside class="aside-menu-hidden pc_aside-menu ">
      
     <section class="main-menu">
       <section class="up-section">
@@ -84,7 +86,7 @@
           <input type="radio" name="menu" id="item8" />
           <label for="item8" class="menu-item">Контакты </label>
         </section>
-        <section class="footer">
+        <section class="aside-footer">
           <section class="contact-image">
             <button type="button" class="call">
               <img src="./img/up menu images/call.png" alt="call button"/>
@@ -110,7 +112,8 @@
       </section>
     </section>
     </aside>
-    <main>
+    <div class="overlay"></div>
+    <main class="main-content">
         <section class="main__page-home">
             <div class="main__page-home--header">
         <h1 class="main__page-home--tittle">Услуги и сервисы</h1>
@@ -137,7 +140,7 @@
                     Адреса сервисных центров
                 </button>
                  <button type="button" class="main__page-home--slide-menu---buttons">
-                    специальные цены
+                    Специальные цены
                 </button>
                  <button type="button" class="main__page-home--slide-menu---buttons">
                     Отзывы
@@ -224,6 +227,30 @@
                         </button>
                     </div>
                     <div class="swiper-slide logo-swiper-slide hidden button2">
+                        <button type="button" class="brands-buttons" >
+                            <img src="./img/brands images/sony.png" class="sony-img" alt="SONY logo button">
+                            <div class="arrow-right">
+                                >
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide logo-swiper-slide hidden2 pc-logo-button">
+                        <button type="button" class="brands-buttons" >
+                            <img src="./img/brands images/hp.png" class="hp-img" alt="Hp logo button">
+                            <div class="arrow-right">
+                                >
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide logo-swiper-slide hidden2 pc-logo-button">
+                        <button type="button" class="brands-buttons" >
+                            <img src="./img/brands images/acer.png" class="acer-img" alt="ACER logo button">
+                            <div class="arrow-right">
+                                >
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide logo-swiper-slide hidden2 pc-logo-button">
                         <button type="button" class="brands-buttons" >
                             <img src="./img/brands images/sony.png" class="sony-img" alt="SONY logo button">
                             <div class="arrow-right">
@@ -333,6 +360,7 @@
                     <div class="main__page-home_price__up-text">
                         ЦЕНЫ И УСЛУГИ
                     </div>
+                    <div class="pc_price">
                         <div class="main__page-home_price__pc-text">
                             <span class="repearPC price_button___text">Ремонтные услуги</span>
                             <span class="pricePC price_button___text">Цена</span>
@@ -436,8 +464,10 @@
                         </div>
                         <div class="swiper-pagination price-swiper-pagination"></div>
                     </div>
+                    </div>
                 </div>
-                <footer>
+        </section>
+                <footer class="footer">
                 <div class="bottom-text">
                     Все цены указаны с учетом НДС.Стоимость ремонта указана на единичную услугу.Для получения коммерческого предложения на постоянное обслуживание,оставте заявку.
                 </div>
@@ -453,8 +483,8 @@
                   <div class="footer-text-3 footer-text">Информация, размещенная на данной странице, не является публичной офертой</div>
                   </div>
             </footer>
-            </section>
-          
+            
+         
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
    <script src="/src/js/index.js"></script> 

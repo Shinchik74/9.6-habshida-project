@@ -56,6 +56,7 @@
 }
 .main__page-home--article---text.open {
     max-height: 200px;
+    padding-bottom: 50%;
 }
 .article-hidden {
     display: none !important;
@@ -211,7 +212,7 @@ border-top: 3px solid rgba(217, 255, 245, 1);
         width: 50%;
     }
     .main__page-home--article-img {
-        width: 100vw;
+        // width: 100vw;
         // height: 100vh;
         display: flex;
         flex-direction: row;
@@ -219,7 +220,10 @@ border-top: 3px solid rgba(217, 255, 245, 1);
         
     }
     .main__page-home_price__pc-text{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-left: 1.5rem;
+        padding-top: 1rem;
     }
     .price_button-text {
         display: none;
@@ -229,10 +233,21 @@ border-top: 3px solid rgba(217, 255, 245, 1);
         flex-direction: column;
         width: 100%;
     }
-    .price_button__1 {
-        flex-direction: row;
-        display: flex;
+    .price_swiper-slide {
+        // flex-direction: row;
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         width: 100%;
+        height: 70px;
+        row-gap: 5rem;
+        
+    }
+    .price_button__button {
+        position: relative;
+        top: 4%;
+        padding-right: 2rem !important;
+        
     }
 }
  

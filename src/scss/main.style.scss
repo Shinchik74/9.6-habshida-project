@@ -22,7 +22,7 @@ button:hover {
 }
 body {
     margin: 0;
-   width: 100vw;
+   
   height: 100vh;
   padding-bottom: 2rem;
 }
@@ -37,6 +37,10 @@ html, body {
     border: none;
     background: none;
 }
+// .body-main {
+// display: flex;
+// }
+
 .button-show-hide {
     width: 132px;
     height: 24px;
@@ -65,9 +69,9 @@ html, body {
 .footer-text {
     font-family: "TTlakes-regular";
     color:rgba(126, 126, 130, 1) ;
-    // display: flex;
-    // justify-content: center;
-  //  overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+   overflow-wrap: break-word;
     
 
 }
@@ -76,7 +80,7 @@ html, body {
   justify-content: center;
 
 }
-.footer-text-1, .footer-text-2, .footer-terxt-3 {
+.footer-text-1, .footer-text-2, .footer-text-3 {
   padding-bottom: 1rem;
 }
 .footer-text-3 {
@@ -90,5 +94,143 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+
+}
+.hidden2 {
+  display: none;
+}
+@media (min-width:1024px) {
+  .body-main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    // grid-template-columns: repeat(2,1fr);
+    // grid-template-rows: repeat(2,1fr);
+  
+  }
+  .aside-menu-hidden {
+    display: block !important;
+    position: relative !important;
+    left: auto;
+    top: 0;
+    // transform: none;
+    // grid-column: 1 / 2;
+    min-height: 100vh;
+    width: 320px;
+  transform: none !important;
+  transition: none !important;
+  background-color: rgba(248, 248, 248, 1);
+  z-index: 1000;
+  
+    
+  }
+  .main-menu {
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+  }
+  .main-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    position: relative;
+    bottom: 5% !important;
+    min-height: 100vh;
+    padding-top: 1rem;
+    background-color: rgba(248, 248, 248, 1) !important;
+  //   background-position: center;
+  //   background-size: cover;
+  // }
+  // .pc_aside-menu {
+  //   display: flex !important;
+  //   grid-column: 1 / 2;
+  //   min-height: 100vh;
+  //   width: 320px;
+  // }
+  }
+  .burger {
+    display: none;
+  }
+  .main__page-home--slide-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+  }
+  // .main__page-home--img {
+  //   display: flex;
+  //   flex: 1;
+  // }
+  .main__page-home--article-img {
+    display: flex;
+    height: auto;
+  }
+  // .main__page-home {
+  //   margin-top: -2rem;
+  //   // height: 100vh;
+  //   width: 100%;
+  //   // grid-column: 2 / 3;
+    
+
+   
+  // }
+  
+  .overlay {
+    display: none;
+  }
+  .header__navigation {
+    display: none !important;
+  }
+  .main__page-home--header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .computor_nav-button {
+    display: flex !important;
+    // justify-content: flex-end;
+
+  }
+  .computor_header__navigation {
+    display: flex;
+    
+    // position: relative;
+    // left: 38%;
+  }
+  .main__page-home--slide-menu {
+    overflow-y: auto;
+  }
+  
+  // .footer {
+
+  // }
+.main__page-home--up-text, .main__page-home__equipment-repair___up-text, .main__page-home_price__up-text, .main__page-home_price__pc-text {
+  background: linear-gradient(to right,rgba(248, 248, 248, 1), white );
+}
+.repear-swiper, .price-swiper {
+  background-color: rgba(248, 248, 248, 1);
+
+}
+.price_swiper-slide {
+  border-top: 5px solid rgba(248, 248, 248, 1);
+  
+}
+.logo-button-show-hide {
+  display: none;
+
+}
+.logo-button-show-hide2 {
+  display: block;
+  background-color: rgba(248, 248, 248, 1);
+}
+.logo-swiper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main__page-home__brands-buttons {
+  background-color: rgba(248, 248, 248, 1);
+}
+
 
 }

@@ -114,17 +114,27 @@ document.querySelectorAll('[data-type="third-swiper"]').forEach((el) => {
 const openButton = document.querySelector(".header__navigation--left-button---burger");
 const closeButton = document.querySelector(".burger");
 const asideMenu = document.querySelector("aside");
+const overlay = document.querySelector(".overlay");
 
 openButton.addEventListener("click", () => {
     // console.log(1);
     asideMenu.classList.remove("aside-menu-hidden");
     asideMenu.classList.add("aside-menu");
+    overlay.classList.add("overlay-active")
 });
 
 closeButton.addEventListener("click", () => {
     asideMenu.classList.remove("aside-menu");
     asideMenu.classList.add("aside-menu-hidden");
+    overlay.classList.remove("overlay-active")
 });
+overlay.addEventListener("click", () => {
+    asideMenu.classList.remove("aside-menu");
+    asideMenu.classList.add("aside-menu-hidden");
+    overlay.classList.remove("overlay-active");
+});
+
+
 const showBtn = document.querySelector("#showBtn");
 const hideBtn = document.querySelector("#hideBtn");
 const buttons = document.querySelectorAll(".button2");
