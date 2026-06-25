@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: "TTlakes-regular";
@@ -14,116 +14,105 @@
   src: url(/src/assets/fonts/fonts/TTLakes/TTLakes-Bold.woff);
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 button:hover {
-    transform: translate(3px);
-    transition: 0.3s;
+  transform: translate(3px);
+  transition: 0.3s;
 }
 body {
-    margin: 0;
-   
+  margin: 0;
+
   height: 100vh;
   padding-bottom: 2rem;
 }
-html, body {
-     width: 100%; 
-     margin: 0; 
-     overflow-x: hidden;
-    }
-    .double-arrow {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: none;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
 }
-// .body-main {
-// display: flex;
-// }
+.double-arrow {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+}
 
 .button-show-hide {
-    width: 132px;
-    height: 24px;
-    border: none;
-    background: none;
-    display: flex;
-    align-items: center;
-    font-family: TTLakes-Medium;
+  width: 132px;
+  height: 24px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  font-family: TTLakes-Medium;
 }
 .arrow-right:hover {
-    transform: translate(3px);
-    transition: 0.3s;
+  transform: translate(3px);
+  transition: 0.3s;
 }
 .arrow-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgba(255, 62, 121, 1);
-    border-radius: 50%;
-    color: rgba(255, 62, 121, 1);
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    font-size: 180%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 62, 121, 1);
+  border-radius: 50%;
+  color: rgba(255, 62, 121, 1);
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  font-size: 180%;
 }
 .footer-text {
-    font-family: "TTlakes-regular";
-    color:rgba(126, 126, 130, 1) ;
-    display: flex;
-    justify-content: center;
-   overflow-wrap: break-word;
-    
-
+  font-family: "TTlakes-regular";
+  color: rgba(126, 126, 130, 1);
+  display: flex;
+  justify-content: center;
+  overflow-wrap: break-word;
 }
 .footer-text-1 {
   display: flex;
   justify-content: center;
-
 }
-.footer-text-1, .footer-text-2, .footer-text-3 {
+.footer-text-1,
+.footer-text-2,
+.footer-text-3 {
   padding-bottom: 1rem;
 }
 .footer-text-3 {
-
-padding-left: 4rem;
-display: flex;
-justify-content: center;
+  padding-left: 4rem;
+  display: flex;
+  justify-content: center;
 }
 .footer-text-all {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .hidden2 {
   display: none;
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .body-main {
     display: flex;
     width: 100%;
     min-height: 100vh;
     margin: 0;
-    // grid-template-columns: repeat(2,1fr);
-    // grid-template-rows: repeat(2,1fr);
-  
   }
   .aside-menu-hidden {
     display: block !important;
     position: relative !important;
     left: auto;
     top: 0;
-    // transform: none;
-    // grid-column: 1 / 2;
+
     min-height: 100vh;
     width: 320px;
-  transform: none !important;
-  transition: none !important;
-  background-color: rgba(248, 248, 248, 1);
-  z-index: 1000;
-  
-    
+    transform: none !important;
+    transition: none !important;
+    background-color: rgba(248, 248, 248, 1);
+    z-index: 1000;
   }
   .main-menu {
     box-shadow: none !important;
@@ -131,7 +120,6 @@ flex-direction: column;
     outline: none;
   }
   .main-content {
-    display: flex;
     flex: 1;
     width: 100%;
     min-width: 0;
@@ -140,15 +128,11 @@ flex-direction: column;
     min-height: 100vh;
     padding-top: 1rem;
     background-color: rgba(248, 248, 248, 1) !important;
-  //   background-position: center;
-  //   background-size: cover;
-  // }
-  // .pc_aside-menu {
-  //   display: flex !important;
-  //   grid-column: 1 / 2;
-  //   min-height: 100vh;
-  //   width: 320px;
-  // }
+
+    .main__page-home {
+      min-width: 0;
+      overflow: hidden;
+    }
   }
   .burger {
     display: none;
@@ -159,24 +143,12 @@ flex-direction: column;
     gap: 1rem;
     padding: 0;
   }
-  // .main__page-home--img {
-  //   display: flex;
-  //   flex: 1;
-  // }
+
   .main__page-home--article-img {
     display: flex;
     height: auto;
   }
-  // .main__page-home {
-  //   margin-top: -2rem;
-  //   // height: 100vh;
-  //   width: 100%;
-  //   // grid-column: 2 / 3;
-    
 
-   
-  // }
-  
   .overlay {
     display: none;
   }
@@ -187,50 +159,83 @@ flex-direction: column;
     display: flex;
     justify-content: space-between;
   }
+  .logo-swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
   .computor_nav-button {
     display: flex !important;
-    // justify-content: flex-end;
-
   }
   .computor_header__navigation {
     display: flex;
-    
-    // position: relative;
-    // left: 38%;
   }
   .main__page-home--slide-menu {
     overflow-y: auto;
   }
-  
-  // .footer {
 
-  // }
-.main__page-home--up-text, .main__page-home__equipment-repair___up-text, .main__page-home_price__up-text, .main__page-home_price__pc-text {
-  background: linear-gradient(to right,rgba(248, 248, 248, 1), white );
-}
-.repear-swiper, .price-swiper {
-  background-color: rgba(248, 248, 248, 1);
+  .main__page-home--up-text,
+  .main__page-home__equipment-repair___up-text,
+  .main__page-home_price__up-text,
+  .main__page-home_price__pc-text {
+    background: linear-gradient(to right, rgba(248, 248, 248, 1), white);
+  }
+  .repear-swiper,
+  .price-swiper,
+  .footer {
+    background-color: rgba(248, 248, 248, 1);
+  }
+  .price_swiper-slide {
+    border-top: 5px solid rgba(248, 248, 248, 1);
+  }
+  .logo-button-show-hide {
+    display: none;
+  }
 
-}
-.price_swiper-slide {
-  border-top: 5px solid rgba(248, 248, 248, 1);
-  
-}
-.logo-button-show-hide {
-  display: none;
+  .main__page-home__brands-buttons {
+    background-color: rgba(248, 248, 248, 1);
+  }
+  .footer-text-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+  }
 
-}
-.logo-button-show-hide2 {
-  display: block;
-  background-color: rgba(248, 248, 248, 1);
-}
-.logo-swiper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.main__page-home__brands-buttons {
-  background-color: rgba(248, 248, 248, 1);
-}
+  .footer-text--1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-text-3 {
+    display: block;
+    justify-content: flex-end;
+    padding: 0;
+    width: 300px;
+  }
+  .footer-text-2 {
+    padding: 0;
+  }
+  .hidden,
+  .button2 {
+    display: grid !important;
+    grid-row: 2;
+  }
+  .logo-button-show-hide {
+    display: none !important;
+  }
+  .price_swiper-wrapper {
+    gap: 0.5rem;
+  }
 
-
+  .logo-swiper-slide {
+    display: block !important;
+  }
+  .logo-button-show-hide2 {
+    display: flex !important;
+    padding-left: 2.5%;
+  }
+  .hidden2 {
+    display: none !important;
+  }
 }
